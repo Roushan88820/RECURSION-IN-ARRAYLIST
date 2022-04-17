@@ -19,14 +19,15 @@ public class Main {
     // dr - destination row
     // dc - destination column
     public static ArrayList<String> getMazePaths(int sr, int sc, int dr, int dc) {
-        if(sr > dr || sc > dc) { // agarr maine koii v wall breach ki too ye base case
+        if(sr > dr || sc > dc) { // agarr maine row yaa frr column koii v wall breach ki too ye base case
 
             ArrayList<String> bres= new ArrayList<>();
 
             return bres; // [] :-> 0 maii maze see bahar hoon isiliyee khaalii arrayList
 
         }
-        else if(sr == dr && sc == dc) {
+        else if(sr == dr && sc == dc) { // jabb iskee andarr aaungaa too iskaa matlbb mainee dono condition  satisfy karii haii aurr maii bottom right corner pee hoon
+            
             ArrayList<String> bres = new ArrayList<>();
             bres.add("");
 
